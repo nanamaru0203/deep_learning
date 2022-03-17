@@ -25,6 +25,11 @@ def OR(x, y):
         return 0
 
 
+def XOR(x, y):
+    return AND(OR(x, y), NAND(x, y))
+
+
 print(AND(0, 0), AND(0, 1), AND(1, 0), AND(1, 1))
 print(NAND(0, 0), NAND(0, 1), NAND(1, 0), NAND(1, 1))
 print(OR(0, 0), OR(0, 1), OR(1, 0), OR(1, 1))
+print(XOR(0, 0), XOR(0, 1), XOR(1, 0), XOR(1, 1))
